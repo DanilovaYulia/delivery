@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тануки - доставка еды на дом</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="container">
+      <header class="header">
+        <a href="index.html"class="logo"><img src="img/logo.svg" alt="Delivery Food"  /></a>
+        <input
+          type="text"
+          class="input input-adress"
+          placeholder="Адрес доставки"
+        />
+        <div class="buttons">
+          <button class="button button-primary">
+            <img src="/img/user.svg" alt="" class="button-icon" />
+            <span class="button-content">Войти</span>
+          </button>
+          <button class="button button-shopping" id="cart-button">
+            <img src="/img/shopping-cart.svg" alt="" class="button-icon" />
+            <span class="button-content">Корзина</span>
+          </button>
+        </div>
+      </header>
+    </div>
+    <!-- /header -->
+
+    <!-- main -->
+    <main class="main">
+      <div class="container">               
+        <section class="restaurants">
+          <div class="restaurants-heading">
+            <h2 class="restaurants-heading-title">Тануки</h2>
+            <div class="card-info">
+                  <div class="card-rating">4.5</div>
+                  <div class="card-price">От 1200 ₽</div>
+                  <div class="card-category">Суши, ролы</div>
+                </div>
+          </div>
+          <!-- cards -->
+          <div class="cards restaurant-cards" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card restaurant-card animate__animated animate__fadeInUp" >
+              <img src="/img/Тануки РоллУгрь.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Ролл угорь стандарт</div>
+                </div>
+                <div class="card-info ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</div>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">250 ₽</span>                  
+                </div>
+              </div>
+            </div>
+            <div class="card restaurant-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <img src="/img/Тануки Калифорния.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text restaurant-card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Калифорния лосось стандарт</div>
+                </div>
+                <span class="card-info  ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</span>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">395 ₽</span>                  
+                </div>
+              </div>
+            </div>
+            <div class="card restaurant-card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+              <img src="/img/Тануки Окинава стандарт.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Окинава стандарт</div>
+                </div>
+                <div class="card-info  ingredients"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</div>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">250 ₽</span>                  
+                </div>
+              </div>
+            </div>
+            <div class="card restaurant-card" data-aos="fade-up" data-aos-duration="1000">
+              <img src="/img/Тануки Цезарь маки xl.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Цезарь маки хl</div>
+                </div>
+                <div class="card-info  ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</div>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">250 ₽</span>                  
+                </div>
+              </div>
+            </div>
+            <div class="card restaurant-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <img src="/img/Тануки Ясай маки стандарт 185 г.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Ясай маки стандарт 185г</div>
+                </div>
+                <div class="card-info  ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</div>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">250 ₽</span>                  
+                </div>
+              </div>
+            </div>
+            <div class="card restaurant-card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+              <img src="/img/Тануки Ролл с креветкой стандарт.svg" alt="" class="card-img restaurant-card-img" />
+              <div class="card-text">
+                <div class="card-heading">
+                  <div class="card-title restaurant-card-title">Ролл с креветкой стандарт</div>
+                </div>
+                <div class="card-info  ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</div>
+                <div class="restaurant-card-order">
+                  <button class="button button-primary"><span class="button-content restaurant-button-content">В корзину</span> <img src="/img/order-shopping-cart.svg" alt="" class="restaurant-button-icon" /></button>
+                  <span class="restaurant-card-price">250 ₽</span>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- /main -->
+    <!-- footer -->
+      <footer class="footer">
+        <div class="container footer-block">
+          <a class="logo footer-logo"  href="index.html"><img src="img/logo.svg" alt="" ></a>
+          <nav class="footer-nav">
+            <a href="#" class="footer-link">Ресторанам </a>
+            <a href="#" class="footer-link">Курьерам</a>
+            <a href="#" class="footer-link">Пресс-центр</a>
+            <a href="#" class="footer-link">Контакты</a>
+          </nav>
+          <div class="social-links">
+            <a class="social-link" href="#"><img src="img/f-insta.svg" alt="insta" class="social-link"></a>
+            <a class="social-link" href="#"><img src="img/f-fb.svg" alt="FB" class="social-link"></a>
+            <a class="social-link" href="#"><img src="img/f-vk.svg" alt="VK" class="social-link"></a>
+          </div>
+        </div>
+      </footer>
+    <!-- /footer -->
+    <div class="modal">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Корзина</h3>
+          <button class="close">&times;</button>
+        </div> 
+        <div class="modal-body">
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+                    <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+                    <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+                    <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+                    <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>        
+        </div> 
+        <div class="modal-footer">
+          <span class="modal-pricetag">1250 ₽</span>
+          <div class="footer-buttons">
+            <button class="button button-primary">Оформить заказ</button>
+            <button class="button">Отмена</button>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

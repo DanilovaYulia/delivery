@@ -1,0 +1,618 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto',
+    sans-serif;
+  padding-top: 40px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.main {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.input {
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-position: 11px center;
+  padding-left: 35px;
+  outline: none;
+}
+
+.input-adress {
+  flex: 0.8;
+  background-image: url(/img/home.svg);
+}
+
+.input-search {
+  margin-left: auto;
+  background-image: url(/img/search.svg);
+  height: 34px;
+  width: 300px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  color: #595959;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  outline: none;
+}
+
+.button-icon {
+  margin-right: 4px;
+}
+
+.button-primary {
+  background-color: #1890FF;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.promo {
+  padding: 68px 70px;
+  margin-bottom: 56px;
+  box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+  background: #FFF1B8 url(/img/h-banner-img.jpeg) no-repeat top -100px right -247px / 924px;
+  border-radius: 10px;
+}
+
+.promo-title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: #302C34;
+}
+
+.promo-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #302C34;
+}
+
+.restaurants-heading {
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.restaurants-heading-title {
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  height: 384px;
+  width: 378px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000; 
+}
+.card:hover {
+  color: rgba(17, 15, 27, 0.6);
+}
+
+.card-img {
+  width: 384px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+}
+
+.card-text {
+  width: 335px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.card-tag {
+  padding: 1px 8px;
+  background: #262626;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.card-info {
+  min-width: 267px;
+  display: flex;
+  align-items: center; 
+  overflow: hidden;
+}
+
+.card-rating {
+  margin-right: 26px;
+  padding-left: 20px;
+  min-width: 48px;
+  height: 32px;
+  background: url(/img/h-star.svg) no-repeat top 6px left;
+  text-align: left;
+  color: #FFC107;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.card-price,
+.card-category {
+  margin-right: 10px;
+  width: 120px;
+  height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8C8C8C;
+  overflow: hidden;
+  }
+.card-price {
+  min-width: 90px;
+}
+.card-category {
+  min-width: 100px;
+}
+
+.card-price::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #8C8C8C;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.footer-block {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  margin-right: 36px;
+}
+.footer-nav {
+  margin-right: auto;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #595959;
+}
+.footer-link:not(:last-child) {
+    margin-right: 15px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 21px;
+}
+
+/* Restorant page */
+.restaurant-card {
+ width: 384px;
+ height: 415px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.restaurant-card-img {
+width: 100%;
+height: 212px;
+}
+
+.restaurant-card-title {
+  font-weight: normal;
+}
+.restaurant-card-text {
+  height: 200px;
+}
+
+.ingredients {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+}
+
+.restaurant-card-order {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.restaurant-card-price {
+  margin-left: 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+.restaurant-button-content {
+  margin-right: 10px;
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal-open {
+  display: flex;
+}
+.modal-body {
+  margin-bottom: 52px;
+}
+.modal-dialog {
+  margin: auto;
+  padding: 41px 46px;
+  max-width: 780px;
+  width: 95%;
+  /*min-height: 552px;*/
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.modal-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.modal-header {
+  display: flex;
+  margin-bottom: 46px;
+  justify-content: space-between;
+  align-items: center;
+}
+.close {
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+}
+
+.food-row {
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.food-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.food-price {
+  margin-left: auto;
+  margin-right: 47px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.food-counter {
+  display: flex;
+  align-items: center;
+}
+.counter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #40A9FF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  outline: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #40A9FF;
+}
+
+.counter {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 13px;
+}
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.button-primary {
+  margin-right: 19px;
+}
+
+.modal-pricetag {
+  background: #262626;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 15px 20px;
+}
+
+/* adaptiv */
+@media(max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .promo {
+    background-position: top right center -250px;
+    background-size: 750px;
+  }
+  .card {
+    flex-basis: 32%;
+  }
+  .restaurant-card {
+   width: 384px;
+   height: 470px;
+  }
+  .restaurant-card-title {
+    height: 64px;
+  }
+  .card-text {
+    max-width: 250px;
+  }
+  .card-price,
+  .card-category {
+    font-size: 14px;
+  }
+  .card-price {
+    min-width: 80px;
+  }
+  .ingredients {
+    width: 250px;
+    height: 60px;    
+
+  }
+}
+@media(max-width: 992px) {
+
+  .container {
+    max-width: 750px;
+  }
+
+  .promo {
+    padding: 50px;
+    background-position: center right -200px;
+    background-size: 500px;
+  }
+  .promo-text {
+    font-size: 18px;
+  }
+
+  .promo-title {
+    font-size: 29px;
+  }
+
+  .card {
+    flex-basis: 49%;
+  }
+
+  .footer-link {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .promo {
+   padding: 40px;
+   background-position:  top -40px right -170px;
+   background-size: 470px;
+  }
+
+   .promo-text {
+     font-size: 15px;     
+   }
+
+   .promo-title {
+     font-size: 25px;
+   }
+
+    .ingredients {
+    font-size: 15px;     
+    }
+    .restaurant-button-content {
+      font-size: 15px;
+    }
+    .restaurant-card-title {
+      font-size: 20px;
+    }
+    .card .card-rating {
+      flex-basis: 100%;
+    }
+    .card-info {
+      flex-wrap: wrap;
+      max-width: 250px;
+
+      padding-right: 10px;
+    }
+
+    .card-text {
+      max-width: 230px;
+    }
+    
+    .footer-block {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+
+    .footer-nav {
+      margin: 0 auto 20px auto;
+      
+    }
+}
+
+@media(max-width: 578px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .input-adress {
+    margin-top: 15px;
+    flex: 1;
+    order: 5;
+  }
+  .promo {
+     
+    background-position: top -40px right -150px;
+    background-size: 400px;
+  }
+
+  .restaurants-heading-title {
+    font-size: 25px;
+  }
+
+  .card {
+    flex-basis: 80%;
+    margin: 0 auto 30px auto;
+  }
+  .card-img {
+    width: 100%;     
+  }
+  .card-info {
+   flex-wrap: nowrap;
+  }    
+}
+
+@media(max-width: 480px) {
+  .card {
+    flex-basis: 100%;
+  }
+  .promo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: none;
+    background-color: #FFF1B8;
+    background-size: 470px;
+  }
+  .restaurants-heading {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav {
+    margin: 0px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+  }
+
+  .footer-link:not(:last-child) {
+    margin-right: 0;
+  }
+  .promo-title {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .promo-text {
+    line-height: 18px;
+  }
+  .button-content {
+    display: none;
+  }
+  .button-icon {
+    margin: 0;
+  }
+} 
